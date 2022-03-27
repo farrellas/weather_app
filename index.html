@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="js/main.js"></script>
+<title>Andrew's Weather App</title>
+</head>
+<body>
+    <div id="main-content">
+        <div id="search">
+            <h1 id="heading">Andrew's Open Weather API Tool</h1>
+            <button class="btn search-btn" id="current-location" onclick="currentLocation()">Use Current Location</button>
+            <input type="text" class="search-bar" id="city" placeholder="Enter city here">
+            <select name="state" id="state">
+                <option value="" selected>Select State</option>
+                <option value="US-AL">Alabama</option>
+                <option value="US_AK">Alaska</option>
+                <option value="US-AZ">Arizona</option>
+                <option value="US-AR">Arkansas</option>
+                <option value="US-CA">California</option>
+                <option value="US-CO">Colorado</option>
+                <option value="US-CT">Connecticut</option>
+                <option value="US-DE">Delaware</option>
+                <option value="US-DC">District of Columbia</option>
+                <option value="US-FL">Florida</option>
+                <option value="US-GA">Georgia</option>
+                <option value="US-HI">Hawaii</option>
+                <option value="US-ID">Idaho</option>
+                <option value="US-IL">Illinois</option>
+                <option value="US-IN">Indiana</option>
+                <option value="US-IA">Iowa</option>
+                <option value="US-KS">Kansas</option>
+                <option value="US-KY">Kentucky</option>
+                <option value="US-LA">Louisiana</option>
+                <option value="US-ME">Maine</option>
+                <option value="US-MD">Maryland</option>
+                <option value="US-MA">Massachusetts</option>
+                <option value="US-MI">Michigan</option>
+                <option value="US-MN">Minnesota</option>
+                <option value="US-MS">Mississippi</option>
+                <option value="US-MO">Missouri</option>
+                <option value="US-MT">Montana</option>
+                <option value="US-NE">Nebraska</option>
+                <option value="US-NV">Nevada</option>
+                <option value="US-NH">New Hampshire</option>
+                <option value="US-NJ">New Jersey</option>
+                <option value="US-NM">New Mexico</option>
+                <option value="US-NY">New York</option>
+                <option value="US-NC">North Carolina</option>
+                <option value="US-ND">North Dakota</option>
+                <option value="US-OH">Ohio</option>
+                <option value="US-OK">Oklahoma</option>
+                <option value="US-OR">Oregon</option>
+                <option value="US-PA">Pennsylvania</option>
+                <option value="US-PR">Puerto Rico</option>
+                <option value="US-RI">Rhode Island</option>
+                <option value="US-SC">South Carolina</option>
+                <option value="US-SD">South Dakota</option>
+                <option value="US-TN">Tennessee</option>
+                <option value="US-TX">Texas</option>
+                <option value="US-UT">Utah</option>
+                <option value="US-VT">Vermont</option>
+                <option value="US-VA">Virginia</option>
+                <option value="US-WA">Washington</option>
+                <option value="US-WV">West Virginia</option>
+                <option value="US-WI">Wisconsin</option>
+                <option value="US-WY">Wyoming</option>
+            </select>
+            <button class="btn search-btn" id="cityBtn" onclick="loadCity()">Search by City</button>
+            <input type="text" class="search-bar" id="zip" placeholder="OR Enter zip code here">
+            <button class="btn search-btn" id="zipBtn" onclick="loadZip()">Search by Zip Code</button>
+        </div>
+        <section id="weather">
+
+        </section>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
